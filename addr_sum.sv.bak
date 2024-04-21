@@ -1,0 +1,10 @@
+module addr_sum (str, tab, out);
+
+input logic [$clog2(80)-1:0] str;
+input logic [$clog2(48)-1:0] tab;
+
+output logic [$clog(3840):0] out;
+
+assign out  = 80*tab + str;
+
+endmodule;

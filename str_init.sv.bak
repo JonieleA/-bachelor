@@ -1,0 +1,35 @@
+module str_init(init, clk, ready, next_symb, next_line);
+
+input logic clk;
+output logic ready, next_symb, next_line;
+output  logic [7:0] out;
+
+logic [6:0] Q = 0;
+logic init_com;
+
+always begin
+
+	if (clk & init & Q == 0) begin
+		Q = 6'd7;
+		init_com = 1;
+	end
+	if (clk & Q > 1 & init_com) begin
+		case (Q)
+		7 : out = 8'h32;
+		6 : out = 8'h62
+		5 : out = 8'h58
+		4 : out = 8'h110
+		3 : out = 8'h101
+		2 : out = 8'h115
+		default : out = 8'h0;
+		endcase
+		Q <= Q - 1;
+		end
+		else if (clk & Q == 1 & init_com) begin
+		out = 8'h117;
+		Q <= 0;
+		init_com = 0;
+	end
+
+end
+

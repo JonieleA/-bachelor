@@ -1,0 +1,19 @@
+`timescale 1ns/1ns
+
+module tb1;
+
+logic clk, count, flag;
+
+logic 
+
+schet_param #(.Schet(80)) U1 (.clk(clk), .flag(flag), .count(count));
+
+initial begin
+clk = 0;
+end
+
+always #1 clk = !clk;
+
+initial #100 $stop;
+
+endmodule

@@ -1,0 +1,27 @@
+`timescale 1ns/1ns
+
+module tb8;
+
+logic enter, clk, overflow, tab, rst;
+output enum logic [1:0] {display, commands, autoupd, resave} state, nextstate;
+
+ram_use ram_use(.enter(enter), .clk(clk), .state(state), .nextstate(nextstate), .rst(rst), .overflow(overflow), .tab(tab));
+
+initial begin
+ rst = 1;
+ clk = 0;
+ #10;
+ rst = 1;
+ #6;
+ enter = 1;
+ #100;
+ enter = 0;
+ overflow = 1;
+ #1 overflow = 0;
+ #4000 tab = 1;
+ #1 tab=0;
+end
+always #1 clk=!clk;
+initial #10000 $stop;
+
+endmodule

@@ -1,0 +1,28 @@
+`timescale 1ns/1ns
+
+module tb3;
+
+logic clk, str, Delete, CUF, CUB, CNL, CPL, CHA, CUP, ED, EL, SU, SD, HVP, SCP, RCP, Clear, Uname;
+
+logic [7:0] in;
+
+commands commands(in, clk, str, Delete, CUF, CUB, CNL, CPL, CHA, CUP, ED, EL, SU, SD, HVP, SCP, RCP, Clear, Uname);
+
+initial begin
+clk = 0;
+end
+always #1 clk = !clk;
+initial begin
+#0 in = 8'd117;
+#2 in = 8'd110;
+#2 in = 8'd97;
+#2 in = 8'd109;
+#2 in = 8'd101;
+#2 in = 8'd32;
+#2 in = 8'd45;
+#2 in = 8'd97;
+end
+
+initial #20 $stop;
+
+endmodule

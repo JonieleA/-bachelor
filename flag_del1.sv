@@ -1,0 +1,14 @@
+module flag_del1 (clk, flag, out);
+
+input logic clk, flag;
+output out;
+logic [1:0] count=0;
+
+always_ff @(posedge clk) begin
+	if (flag == 1) count <= 2;
+	if (count > 0 & flag == 0) count <= count - 1;
+end
+
+assign out = (count[0] == 1) ? 1 : 0;
+
+endmodule

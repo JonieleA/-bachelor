@@ -1,0 +1,19 @@
+module memory_schet (clk, plus_str, plus_tab, minus_str, minus_tab, count);
+
+input logic clk, plus_str, plus_tab, minus_str, minus_tab;
+output logic [11:0] count=0;
+output logic flag;
+
+always_ff @(posedge clk) begin
+	if (clk & count < 3839) begin
+		if (plus_str & ! plus_tab & !minus_str & !minus_tab) count <= count + 1;
+		else if (!plus_str & plus_tab & !minus_str & !minus_tab) count <= count + 80;
+		else if (!plus_str & !plus_tab & minus_str & !minus_tab) count <= count - 1;
+		else if (!plus_str & !plus_tab & !minus_str & minus_tab) count <= count - 80;
+		else count <= count;
+	else count <= 0;
+end
+
+assign flag = (count == 3839) ? 1:0;
+
+endmodule

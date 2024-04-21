@@ -1,0 +1,31 @@
+module memory_line (in, out, clr, str, clk, tab);
+
+input logic [7:0] in; 
+input logic [6:0] str;
+input logic [5:0] tab;
+//logic [30719:0] mem=0;
+output logic [7:0] out;
+input logic clr;
+input logic clk;
+
+//always_ff @(posedge set) begin
+//	if (mem[30719-str*640+(80-tab)*8:30719-str*640+(80-tab)*8-7]==0 & set & tab<80) begin
+//		mem[30719-str*640+(80-tab)*8:30719-str*640+(80-tab)*8-7]<= in;
+//		if (tab<79)tab <= tab+1;
+//		else begin
+//			tab <= 0;
+//			str <= str-1;
+//		end
+//	end
+//end
+
+logic [7:0] RAM [80];		
+		
+always_ff @(posedge clk) begin
+	if (!clr) out <= RAM[str][tab];
+	else RAM[str][tab] <= in;
+end
+		
+endmodule
+
+

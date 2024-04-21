@@ -1,0 +1,14 @@
+module schet_param #(Parmeter Schet = 1) (clk, count, flag);
+
+input logic clk;
+output logic [$clog2(Schet)-1:0] count;
+output logic flag;
+
+always_ff @(posedge clk) begin
+	if (clk & count < Schet) count <= count + 1;
+	else count <= 0;
+end
+
+assign flag = (count == 80) ? 1:0;
+
+endmodule

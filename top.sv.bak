@@ -1,0 +1,15 @@
+module top (ps2_clk, data, out, clk, str_out, str_in);
+
+input logic ps2_clk, clr, data;
+output logic [7:0] out;
+logic [7:0] code;
+logic flag;
+output logic [6:0] str_in;
+output logic [6:0] str_out;
+
+
+KeyboardController KeyboardController(.ps2_clk(ps2_clk), .data(data), .code(code), .flag(flag));
+schet_param #(.Schet(80)) schet (.clk(flag), .count(str_in), .flag());
+memory_line memory_line(.in(code), .out(out), .clr(flag), .str_in(str_in), .clk(clk), .enable(enable), .str_out(str_out));
+
+endmodule

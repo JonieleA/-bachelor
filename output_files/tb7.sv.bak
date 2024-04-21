@@ -1,0 +1,20 @@
+`timescale 1ns/1ns
+
+module tb7;
+
+logic [$clog2(80)-1:0] str;
+logic [$clog2(48)-1:0] tab;
+logic [$clog2(3840)-1:0] out;
+
+schet_param #(.Schet(80)) U1 (.clk(clk), .count(count), .plus_out(plus_out), .plus(plus), .minus(minus), .minus_out(minus_out));
+
+initial begin
+str = 13
+tab = 24
+end
+
+always #1 clk = !clk;
+
+initial #170 $stop;
+
+endmodule

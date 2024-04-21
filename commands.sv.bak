@@ -1,0 +1,8 @@
+module comands(in, clk, str, );
+
+input logic in;
+input logic clk;
+output logic str;
+
+schet_param #(.Schet(80)) schet (.clk(clk), .count(str), .flag());
+
