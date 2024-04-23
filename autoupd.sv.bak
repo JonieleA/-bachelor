@@ -1,0 +1,37 @@
+module autoupd (clk, addr, in, out);
+
+input logic clk;
+output [7:0] out;
+output logic [4:0] addr=0;
+output enum logic [3:0] {start, CSI1, clear1, clear2, clear3, clear4, uname1, uname2, uname3, uname4, uname5, uname6, uname7} state, nextstate;
+
+
+always_ff @(posedge clk, posedge rst)
+	if (rst || nextstate == start) addr <= 0;
+	else if (nextstate!=start) addr = addr+1;
+
+always_comb begin
+	case (state)
+		start : nextstate = (in==8'd27) ? CSI1 : (in==8'd99) ? clear1 : (in == 8'd117) ? uname : start;
+		CSI1 : nextstate = (addr==1) ? start : CSI1;
+		clear1 : 
+		clear2 :
+		clear3 : 
+		clear4 :
+		uname1 :
+		uname2 : 
+		uname3 : 
+		uname4 : 
+		uname5 : 
+		uname6 : 
+		uname7 :
+		default : nextstate = start;
+	endcase
+end
+
+always_ff @(posedge clk, posedge rst)
+	if (rst) state <= start;
+	else state <= nextstate;
+	
+assign out = () ?  : ;
+

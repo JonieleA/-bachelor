@@ -4,6 +4,26 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[4]",
+					"strict" : false
+				},
+				{
 					"name" : "out[0]",
 					"strict" : false
 				},
@@ -32,147 +52,67 @@
 					"strict" : false
 				},
 				{
-					"name" : "out[7]",
+					"name" : "state[0]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[0]",
+					"name" : "state[1]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[1]",
+					"name" : "state[2]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[2]",
+					"name" : "state[3]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[3]",
+					"name" : "nextstate[0]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[4]",
+					"name" : "nextstate[1]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[5]",
+					"name" : "nextstate[2]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[6]",
+					"name" : "nextstate[3]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[7]",
+					"name" : "in[6]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[8]",
+					"name" : "in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[9]",
+					"name" : "in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[10]",
+					"name" : "in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "str_in[11]",
+					"name" : "in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "flag",
+					"name" : "in[5]",
 					"strict" : false
 				},
 				{
-					"name" : "code[0]",
+					"name" : "in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "code[1]",
-					"strict" : false
-				},
-				{
-					"name" : "code[2]",
-					"strict" : false
-				},
-				{
-					"name" : "code[3]",
-					"strict" : false
-				},
-				{
-					"name" : "code[4]",
-					"strict" : false
-				},
-				{
-					"name" : "code[5]",
-					"strict" : false
-				},
-				{
-					"name" : "code[6]",
-					"strict" : false
-				},
-				{
-					"name" : "code[7]",
-					"strict" : false
-				},
-				{
-					"name" : "flag_del",
-					"strict" : false
-				},
-				{
-					"name" : "count_str[0]",
-					"strict" : false
-				},
-				{
-					"name" : "count_str[1]",
-					"strict" : false
-				},
-				{
-					"name" : "count_str[2]",
-					"strict" : false
-				},
-				{
-					"name" : "count_str[3]",
-					"strict" : false
-				},
-				{
-					"name" : "count_str[4]",
-					"strict" : false
-				},
-				{
-					"name" : "count_str[5]",
-					"strict" : false
-				},
-				{
-					"name" : "count_str[6]",
-					"strict" : false
-				},
-				{
-					"name" : "count_tab[0]",
-					"strict" : false
-				},
-				{
-					"name" : "count_tab[1]",
-					"strict" : false
-				},
-				{
-					"name" : "count_tab[2]",
-					"strict" : false
-				},
-				{
-					"name" : "count_tab[3]",
-					"strict" : false
-				},
-				{
-					"name" : "count_tab[4]",
-					"strict" : false
-				},
-				{
-					"name" : "count_tab[5]",
+					"name" : "in[7]",
 					"strict" : false
 				},
 				{
@@ -180,59 +120,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "str_out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[7]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[8]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[9]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[10]",
-					"strict" : false
-				},
-				{
-					"name" : "str_out[11]",
-					"strict" : false
-				},
-				{
-					"name" : "ps2_clk",
-					"strict" : false
-				},
-				{
-					"name" : "data",
+					"name" : "rst",
 					"strict" : false
 				}
 			]
