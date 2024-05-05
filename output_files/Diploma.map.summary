@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Apr 24 00:47:27 2024
+Analysis & Synthesis Status : Successful - Sun May 05 23:54:56 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Diploma
-Top-level Entity Name : autoupd
+Top-level Entity Name : mem_to_disp
 Family : Cyclone IV E
-Total logic elements : 103
-    Total combinational functions : 103
-    Dedicated logic registers : 9
-Total registers : 9
-Total pins : 31
+Total logic elements : 32
+    Total combinational functions : 28
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 44
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 131,072
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

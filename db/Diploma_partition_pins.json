@@ -4,115 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "addr[0]",
+					"name" : "q",
 					"strict" : false
 				},
 				{
-					"name" : "addr[1]",
+					"name" : "write_addr[14]",
 					"strict" : false
 				},
 				{
-					"name" : "addr[2]",
+					"name" : "write_addr[15]",
 					"strict" : false
 				},
 				{
-					"name" : "addr[3]",
+					"name" : "write_addr[13]",
 					"strict" : false
 				},
 				{
-					"name" : "addr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "state[0]",
-					"strict" : false
-				},
-				{
-					"name" : "state[1]",
-					"strict" : false
-				},
-				{
-					"name" : "state[2]",
-					"strict" : false
-				},
-				{
-					"name" : "state[3]",
-					"strict" : false
-				},
-				{
-					"name" : "nextstate[0]",
-					"strict" : false
-				},
-				{
-					"name" : "nextstate[1]",
-					"strict" : false
-				},
-				{
-					"name" : "nextstate[2]",
-					"strict" : false
-				},
-				{
-					"name" : "nextstate[3]",
-					"strict" : false
-				},
-				{
-					"name" : "in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "in[5]",
-					"strict" : false
-				},
-				{
-					"name" : "in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "in[7]",
+					"name" : "write_addr[16]",
 					"strict" : false
 				},
 				{
@@ -120,7 +28,127 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "write_addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[14]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[16]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr[15]",
 					"strict" : false
 				}
 			]

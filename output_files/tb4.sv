@@ -1,5 +1,5 @@
 module tb4();
-// Inputs
+
 logic ps2_clk;
 logic data;
 logic flag;
@@ -7,13 +7,12 @@ logic enter;
 logic tab;
 logic backspace;
 
-// Outputs
 logic [7:0] code;
 
 KeyboardController UUT(.ps2_clk(ps2_clk), .data(data), .code(code), .flag(flag), .enter(enter), .tab(tab), .backspace(backspace));
 
 initial begin
-    // Initialize Inputs
+    
     #50 ps2_clk = 1;
     #50 data = 1;
         
@@ -155,4 +154,4 @@ initial begin
     #50 ps2_clk = 1;
 end
 
-endmodule // KeyboardController_testbench
+endmodule

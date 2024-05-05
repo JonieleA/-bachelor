@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE6E22C8
-set_global_assignment -name TOP_LEVEL_ENTITY autoupd
+set_global_assignment -name TOP_LEVEL_ENTITY mem_to_disp
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:41:36  MARCH 10, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -63,7 +63,7 @@ set_global_assignment -name SYSTEMVERILOG_FILE output_files/tb1.sv
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH top -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH ram_use -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME schet_param -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id schet_param
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb1 -section_id schet_param
@@ -117,6 +117,8 @@ set_global_assignment -name SYSTEMVERILOG_FILE output_files/tb8.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME ram_use -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ram_use
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb8 -section_id ram_use
+set_global_assignment -name SYSTEMVERILOG_FILE autoupd.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb9.sv
 set_global_assignment -name EDA_TEST_BENCH_FILE output_files/tb1.sv -section_id schet_param
 set_global_assignment -name EDA_TEST_BENCH_FILE output_files/tb2.sv -section_id del_par
 set_global_assignment -name EDA_TEST_BENCH_FILE output_files/tb3.sv -section_id commands
@@ -125,7 +127,9 @@ set_global_assignment -name EDA_TEST_BENCH_FILE output_files/tb5.sv -section_id 
 set_global_assignment -name EDA_TEST_BENCH_FILE output_files/tb6.sv -section_id delay_par
 set_global_assignment -name EDA_TEST_BENCH_FILE output_files/tb7.sv -section_id addr_sum
 set_global_assignment -name EDA_TEST_BENCH_FILE output_files/tb8.sv -section_id ram_use
-set_global_assignment -name SYSTEMVERILOG_FILE autoupd.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ram_state.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tab_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mem_to_disp.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

@@ -10,93 +10,34 @@
 # Copying D:/Programs/intelFPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/schet_param.sv}
+# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/ram_use.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:40:56 on Apr 21,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/schet_param.sv 
-# -- Compiling module schet_param
+# Start time: 02:54:08 on Apr 28,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/ram_use.sv 
+# -- Compiling module ram_use
 # 
 # Top level modules:
-# 	schet_param
-# End time: 22:40:56 on Apr 21,2024, Elapsed time: 0:00:00
+# 	ram_use
+# End time: 02:54:08 on Apr 28,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/KeyboardController.sv}
+# 
+# vlog -sv -work work +incdir+E:/Diploma/-bachelor/output_files {E:/Diploma/-bachelor/output_files/tb8.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:40:56 on Apr 21,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/KeyboardController.sv 
-# -- Compiling module KeyboardController
+# Start time: 02:54:08 on Apr 28,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor/output_files" E:/Diploma/-bachelor/output_files/tb8.sv 
+# -- Compiling module tb8
 # 
 # Top level modules:
-# 	KeyboardController
-# End time: 22:40:56 on Apr 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/top.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:40:56 on Apr 21,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/top.sv 
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 22:40:56 on Apr 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/simple_dual_port_ram_single_clock.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:40:56 on Apr 21,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/simple_dual_port_ram_single_clock.sv 
-# -- Compiling module simple_dual_port_ram_single_clock
-# 
-# Top level modules:
-# 	simple_dual_port_ram_single_clock
-# End time: 22:40:57 on Apr 21,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/flag_del1.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:40:57 on Apr 21,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/flag_del1.sv 
-# -- Compiling module flag_del1
-# 
-# Top level modules:
-# 	flag_del1
-# End time: 22:40:57 on Apr 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/addr_sum.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:40:57 on Apr 21,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/addr_sum.sv 
-# -- Compiling module addr_sum
-# 
-# Top level modules:
-# 	addr_sum
-# End time: 22:40:57 on Apr 21,2024, Elapsed time: 0:00:00
+# 	tb8
+# End time: 02:54:09 on Apr 28,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor/output_files {E:/Diploma/-bachelor/output_files/tb5.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:40:57 on Apr 21,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor/output_files" E:/Diploma/-bachelor/output_files/tb5.sv 
-# -- Compiling module tb5
-# 
-# Top level modules:
-# 	tb5
-# End time: 22:40:57 on Apr 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb5
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb5 
-# Start time: 22:40:57 on Apr 21,2024
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb8
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb8 
+# Start time: 02:54:09 on Apr 28,2024
 # Loading sv_std.std
-# Loading work.tb5
-# Loading work.top
-# Loading work.KeyboardController
-# Loading work.schet_param
-# Loading work.addr_sum
-# Loading work.flag_del1
-# Loading work.simple_dual_port_ram_single_clock
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (12) for port 'count_str'. The port definition is at: E:/Diploma/-bachelor/top.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /tb5/top File: E:/Diploma/-bachelor/output_files/tb5.sv Line: 10
-# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (12) for port 'count_tab'. The port definition is at: E:/Diploma/-bachelor/top.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /tb5/top File: E:/Diploma/-bachelor/output_files/tb5.sv Line: 10
+# Loading work.tb8
+# Loading work.ram_use
 # 
 # add wave *
 # view structure
@@ -104,8 +45,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : E:/Diploma/-bachelor/output_files/tb5.sv(158)
-#    Time: 3400 ps  Iteration: 0  Instance: /tb5
-# Break in Module tb5 at E:/Diploma/-bachelor/output_files/tb5.sv line 158
-# End time: 22:41:10 on Apr 21,2024, Elapsed time: 0:00:13
-# Errors: 0, Warnings: 2
+# ** Note: $stop    : E:/Diploma/-bachelor/output_files/tb8.sv(29)
+#    Time: 20 us  Iteration: 0  Instance: /tb8
+# Break in Module tb8 at E:/Diploma/-bachelor/output_files/tb8.sv line 29
+# End time: 03:25:52 on Apr 28,2024, Elapsed time: 0:31:43
+# Errors: 0, Warnings: 0

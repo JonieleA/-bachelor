@@ -38,3 +38,4 @@ Info (10281): Verilog HDL Declaration information at commands.sv(6): object "SD"
 Info (10281): Verilog HDL Declaration information at commands.sv(6): object "HVP" differs only in case from object "hvp" in the same scope File: E:/Diploma/-bachelor/commands.sv Line: 6
 Info (10281): Verilog HDL Declaration information at commands.sv(6): object "SCP" differs only in case from object "scp" in the same scope File: E:/Diploma/-bachelor/commands.sv Line: 6
 Info (10281): Verilog HDL Declaration information at commands.sv(6): object "RCP" differs only in case from object "rcp" in the same scope File: E:/Diploma/-bachelor/commands.sv Line: 6
+Warning (10268): Verilog HDL information at autoupd.sv(9): always construct contains both blocking and non-blocking assignments File: E:/Diploma/-bachelor/autoupd.sv Line: 9
