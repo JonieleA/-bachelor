@@ -1,0 +1,22 @@
+// исполняет команды
+
+module command_worker (clk, rst, Delete, CUF, CUB, CNL, CPL, CHA, CUP, ED, EL, SU, SD, HVP, SCP, RCP, Clear, Uname, state, nextstate);
+
+input logic clk, rst, Delete, CUF, CUB, CNL, CPL, CHA, CUP, ED, EL, SU, SD, HVP, SCP, RCP, Clear, Uname;
+
+output enum logic [:0] {none, } state, nextstate;
+
+always_ff @(posedge clk, posedge rst)
+	if (rst) state <= none;
+	else state <= nextstate;
+	
+always_comb begin
+	case(state)
+		none : nextstate = (Delete) ? delete1 : (CUF) ? CUF1 : (CUB) ? CUB1 : (CNL) ? CNL1 : 
+	endcase
+end
+
+
+
+
+endmodule

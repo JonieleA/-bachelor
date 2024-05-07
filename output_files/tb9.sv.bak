@@ -1,0 +1,26 @@
+`timescale 1ns/1ns
+
+module tb9;
+
+logic clk, we, clear_flag, rst, overload;
+logic [7:0] in, out;
+logic [$clog2(80)-1:0] str_out;
+
+string_ram string_ram (.in(in), .out(out), .clk(clk), .we(we), .str_out(str_out), .clear_flag(clear_flag), .rst(rst), .overload(overload));
+initial begin
+ rst = 1;
+ we = 0;
+ clk = 0;
+ clear_flag = 0;
+ str_out =0;
+ in = 8'd101;
+ #200 we = 1;
+ #2 we = 0;
+ #100 clear = 0;
+ 
+ 
+end
+always #1 clk=!clk;
+initial #20000 $stop;
+
+endmodule

@@ -1,3 +1,4 @@
+// not used
 module memory_schet (clk, plus_str, plus_tab, minus_str, minus_tab, count, flag);
 
 input logic clk, plus_str, plus_tab, minus_str, minus_tab;

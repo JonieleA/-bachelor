@@ -1,3 +1,6 @@
+// следит за тем какие строчки идут на экран
+
+
 module tab_controller (enter, tab_disp, tab_out);
 
 input logic enter;

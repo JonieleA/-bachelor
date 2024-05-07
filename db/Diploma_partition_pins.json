@@ -4,23 +4,107 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "q",
+					"name" : "state[0]",
 					"strict" : false
 				},
 				{
-					"name" : "write_addr[14]",
+					"name" : "state[1]",
 					"strict" : false
 				},
 				{
-					"name" : "write_addr[15]",
+					"name" : "state[2]",
 					"strict" : false
 				},
 				{
-					"name" : "write_addr[13]",
+					"name" : "state[3]",
 					"strict" : false
 				},
 				{
-					"name" : "write_addr[16]",
+					"name" : "state[4]",
+					"strict" : false
+				},
+				{
+					"name" : "nextstate[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nextstate[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nextstate[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nextstate[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nextstate[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ED",
+					"strict" : false
+				},
+				{
+					"name" : "CHA",
+					"strict" : false
+				},
+				{
+					"name" : "CUF",
+					"strict" : false
+				},
+				{
+					"name" : "CNL",
+					"strict" : false
+				},
+				{
+					"name" : "EL",
+					"strict" : false
+				},
+				{
+					"name" : "SD",
+					"strict" : false
+				},
+				{
+					"name" : "SU",
+					"strict" : false
+				},
+				{
+					"name" : "SCP",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "RCP",
+					"strict" : false
+				},
+				{
+					"name" : "HVP",
+					"strict" : false
+				},
+				{
+					"name" : "Delete",
+					"strict" : false
+				},
+				{
+					"name" : "CUB",
+					"strict" : false
+				},
+				{
+					"name" : "CPL",
+					"strict" : false
+				},
+				{
+					"name" : "CUP",
+					"strict" : false
+				},
+				{
+					"name" : "Uname",
 					"strict" : false
 				},
 				{
@@ -28,127 +112,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[0]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[1]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[2]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[3]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[5]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[6]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[7]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[8]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[9]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[10]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[11]",
-					"strict" : false
-				},
-				{
-					"name" : "write_addr[12]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[0]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[1]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[2]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[3]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[5]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[6]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[7]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[8]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[9]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[10]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[11]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[12]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[14]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[13]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[16]",
-					"strict" : false
-				},
-				{
-					"name" : "read_addr[15]",
+					"name" : "rst",
 					"strict" : false
 				}
 			]

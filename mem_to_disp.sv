@@ -1,3 +1,5 @@
+// должна собирать инфу с памяти и преобразовывать в нули и единицы на экран через vga
+
 module mem_to_disp(in, clk, q, read_addr, write_addr);
 input logic clk;
 input logic [7:0] in;

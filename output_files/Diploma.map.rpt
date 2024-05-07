@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Diploma
-Sun May 05 23:54:56 2024
+Tue May 07 23:59:59 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,16 +13,12 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. General Register Statistics
- 10. Registers Packed Into Inferred Megafunctions
- 11. Source assignments for altsyncram:ram_rtl_0|altsyncram_u8h1:auto_generated
- 12. Parameter Settings for Inferred Entity Instance: altsyncram:ram_rtl_0
- 13. altsyncram Parameter Settings by Entity Instance
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
- 17. Analysis & Synthesis Suppressed Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -49,18 +45,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 05 23:54:56 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 07 23:59:59 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Diploma                                     ;
-; Top-level Entity Name              ; mem_to_disp                                 ;
+; Top-level Entity Name              ; command_worker                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 32                                          ;
-;     Total combinational functions  ; 28                                          ;
-;     Dedicated logic registers      ; 4                                           ;
-; Total registers                    ; 4                                           ;
-; Total pins                         ; 44                                          ;
+; Total logic elements               ; 26                                          ;
+;     Total combinational functions  ; 26                                          ;
+;     Dedicated logic registers      ; 5                                           ;
+; Total registers                    ; 5                                           ;
+; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 131,072                                     ;
+; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -72,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; mem_to_disp        ; Diploma            ;
+; Top-level entity name                                            ; command_worker     ; Diploma            ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,88 +157,63 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; mem_to_disp.sv                   ; yes             ; User SystemVerilog HDL File  ; E:/Diploma/-bachelor/mem_to_disp.sv                                             ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; d:/programs/quartus_prime/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_u8h1.tdf           ; yes             ; Auto-Generated Megafunction  ; E:/Diploma/-bachelor/db/altsyncram_u8h1.tdf                                     ;         ;
-; db/decode_bua.tdf                ; yes             ; Auto-Generated Megafunction  ; E:/Diploma/-bachelor/db/decode_bua.tdf                                          ;         ;
-; db/mux_kob.tdf                   ; yes             ; Auto-Generated Megafunction  ; E:/Diploma/-bachelor/db/mux_kob.tdf                                             ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                               ;
++----------------------------------+-----------------+------------------------------+----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path           ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------+---------+
+; command_worker.sv                ; yes             ; User SystemVerilog HDL File  ; E:/Diploma/-bachelor/command_worker.sv ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 32        ;
-;                                             ;           ;
-; Total combinational functions               ; 28        ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 28        ;
-;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 28        ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 4         ;
-;     -- Dedicated logic registers            ; 4         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 44        ;
-; Total memory bits                           ; 131072    ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 20        ;
-; Total fan-out                               ; 629       ;
-; Average fan-out                             ; 4.63      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 26            ;
+;                                             ;               ;
+; Total combinational functions               ; 26            ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 18            ;
+;     -- 3 input functions                    ; 6             ;
+;     -- <=2 input functions                  ; 2             ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 26            ;
+;     -- arithmetic mode                      ; 0             ;
+;                                             ;               ;
+; Total registers                             ; 5             ;
+;     -- Dedicated logic registers            ; 5             ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 28            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; state[1]~reg0 ;
+; Maximum fan-out                             ; 5             ;
+; Total fan-out                               ; 147           ;
+; Average fan-out                             ; 1.69          ;
++---------------------------------------------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Entity Name     ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+-----------------+--------------+
-; |mem_to_disp                           ; 28 (0)              ; 4 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 44   ; 0            ; |mem_to_disp                                                                        ; mem_to_disp     ; work         ;
-;    |altsyncram:ram_rtl_0|              ; 28 (0)              ; 4 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |mem_to_disp|altsyncram:ram_rtl_0                                                   ; altsyncram      ; work         ;
-;       |altsyncram_u8h1:auto_generated| ; 28 (0)              ; 4 (4)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |mem_to_disp|altsyncram:ram_rtl_0|altsyncram_u8h1:auto_generated                    ; altsyncram_u8h1 ; work         ;
-;          |decode_bua:decode2|          ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mem_to_disp|altsyncram:ram_rtl_0|altsyncram_u8h1:auto_generated|decode_bua:decode2 ; decode_bua      ; work         ;
-;          |mux_kob:mux3|                ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mem_to_disp|altsyncram:ram_rtl_0|altsyncram_u8h1:auto_generated|mux_kob:mux3       ; mux_kob         ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+-----------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
+; |command_worker            ; 26 (26)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |command_worker     ; command_worker ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                     ;
-+----------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
-; Name                                                           ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF  ;
-+----------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
-; altsyncram:ram_rtl_0|altsyncram_u8h1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 131072       ; 1            ; 131072       ; 1            ; 131072 ; None ;
-+----------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------+
 
 
 +------------------------------------------------------+
@@ -250,113 +221,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------+
-; Registers Packed Into Inferred Megafunctions ;
-+---------------+--------------+---------------+
-; Register Name ; Megafunction ; Type          ;
-+---------------+--------------+---------------+
-; q~reg0        ; ram_rtl_0    ; RAM           ;
-+---------------+--------------+---------------+
-
-
-+----------------------------------------------------------------------------+
-; Source assignments for altsyncram:ram_rtl_0|altsyncram_u8h1:auto_generated ;
-+---------------------------------+--------------------+------+--------------+
-; Assignment                      ; Value              ; From ; To           ;
-+---------------------------------+--------------------+------+--------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -            ;
-+---------------------------------+--------------------+------+--------------+
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: altsyncram:ram_rtl_0      ;
-+------------------------------------+----------------------+----------------+
-; Parameter Name                     ; Value                ; Type           ;
-+------------------------------------+----------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped        ;
-; OPERATION_MODE                     ; DUAL_PORT            ; Untyped        ;
-; WIDTH_A                            ; 1                    ; Untyped        ;
-; WIDTHAD_A                          ; 17                   ; Untyped        ;
-; NUMWORDS_A                         ; 131072               ; Untyped        ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped        ;
-; WIDTH_B                            ; 1                    ; Untyped        ;
-; WIDTHAD_B                          ; 17                   ; Untyped        ;
-; NUMWORDS_B                         ; 131072               ; Untyped        ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK0               ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Untyped        ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped        ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped        ;
-; BYTE_SIZE                          ; 8                    ; Untyped        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped        ;
-; INIT_FILE                          ; UNUSED               ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped        ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped        ;
-; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_u8h1      ; Untyped        ;
-+------------------------------------+----------------------+----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                 ;
-+-------------------------------------------+----------------------+
-; Name                                      ; Value                ;
-+-------------------------------------------+----------------------+
-; Number of entity instances                ; 1                    ;
-; Entity Instance                           ; altsyncram:ram_rtl_0 ;
-;     -- OPERATION_MODE                     ; DUAL_PORT            ;
-;     -- WIDTH_A                            ; 1                    ;
-;     -- NUMWORDS_A                         ; 131072               ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED         ;
-;     -- WIDTH_B                            ; 1                    ;
-;     -- NUMWORDS_B                         ; 131072               ;
-;     -- ADDRESS_REG_B                      ; CLOCK0               ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED         ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                 ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ;
-+-------------------------------------------+----------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |command_worker|nextstate  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-----------------------------------------------------+
@@ -364,16 +245,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 44                          ;
-; cycloneiii_ff         ; 4                           ;
-;     plain             ; 4                           ;
-; cycloneiii_lcell_comb ; 28                          ;
-;     normal            ; 28                          ;
-;         4 data inputs ; 28                          ;
-; cycloneiii_ram_block  ; 16                          ;
+; boundary_port         ; 28                          ;
+; cycloneiii_ff         ; 5                           ;
+;     CLR               ; 5                           ;
+; cycloneiii_lcell_comb ; 26                          ;
+;     normal            ; 26                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 18                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.36                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.27                        ;
 +-----------------------+-----------------------------+
 
 
@@ -392,7 +274,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun May 05 23:54:47 2024
+    Info: Processing started: Tue May 07 23:59:51 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Diploma -c Diploma
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -407,21 +289,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file schet_p
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/tb1.sv
     Info (12023): Found entity 1: tb1 File: E:/Diploma/-bachelor/output_files/tb1.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file memory_schet.sv
-    Info (12023): Found entity 1: memory_schet File: E:/Diploma/-bachelor/memory_schet.sv Line: 1
+    Info (12023): Found entity 1: memory_schet File: E:/Diploma/-bachelor/memory_schet.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file del_par.sv
     Info (12023): Found entity 1: del_par File: E:/Diploma/-bachelor/del_par.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/tb2.sv
     Info (12023): Found entity 1: tb2 File: E:/Diploma/-bachelor/output_files/tb2.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file ascii.sv
-    Info (12023): Found entity 1: ascii File: E:/Diploma/-bachelor/ascii.sv Line: 1
+    Info (12023): Found entity 1: ascii File: E:/Diploma/-bachelor/ascii.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file commands.sv
     Info (12023): Found entity 1: commands File: E:/Diploma/-bachelor/commands.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at str_init.sv(13): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 13
 Warning (10229): Verilog HDL Expression warning at str_init.sv(14): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 14
 Warning (10229): Verilog HDL Expression warning at str_init.sv(15): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 15
-Warning (10229): Verilog HDL Expression warning at str_init.sv(17): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 17
+Warning (10229): Verilog HDL Expression warning at str_init.sv(16): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 16
 Warning (10229): Verilog HDL Expression warning at str_init.sv(18): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 18
-Warning (10229): Verilog HDL Expression warning at str_init.sv(20): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 20
+Warning (10229): Verilog HDL Expression warning at str_init.sv(19): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 19
 Warning (10229): Verilog HDL Expression warning at str_init.sv(21): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 21
 Warning (10229): Verilog HDL Expression warning at str_init.sv(22): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 22
 Warning (10229): Verilog HDL Expression warning at str_init.sv(23): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 23
@@ -432,8 +313,9 @@ Warning (10229): Verilog HDL Expression warning at str_init.sv(27): truncated li
 Warning (10229): Verilog HDL Expression warning at str_init.sv(28): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 28
 Warning (10229): Verilog HDL Expression warning at str_init.sv(29): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 29
 Warning (10229): Verilog HDL Expression warning at str_init.sv(30): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 30
+Warning (10229): Verilog HDL Expression warning at str_init.sv(31): truncated literal to match 8 bits File: E:/Diploma/-bachelor/str_init.sv Line: 31
 Info (12021): Found 1 design units, including 1 entities, in source file str_init.sv
-    Info (12023): Found entity 1: str_init File: E:/Diploma/-bachelor/str_init.sv Line: 1
+    Info (12023): Found entity 1: str_init File: E:/Diploma/-bachelor/str_init.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file vga_sync.sv
     Info (12023): Found entity 1: vga_sync File: E:/Diploma/-bachelor/vga_sync.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll_inst.v
@@ -474,72 +356,28 @@ Info (12021): Found 0 design units, including 0 entities, in source file tb9.sv
 Info (12021): Found 1 design units, including 1 entities, in source file ram_state.sv
     Info (12023): Found entity 1: ram_state File: E:/Diploma/-bachelor/ram_state.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tab_controller.sv
-    Info (12023): Found entity 1: tab_controller File: E:/Diploma/-bachelor/tab_controller.sv Line: 1
+    Info (12023): Found entity 1: tab_controller File: E:/Diploma/-bachelor/tab_controller.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file mem_to_disp.sv
-    Info (12023): Found entity 1: mem_to_disp File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 1
-Info (12127): Elaborating entity "mem_to_disp" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at mem_to_disp.sv(13): truncated value with size 8 to match size of target (1) File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 13
-Info (19000): Inferred 1 megafunctions from design logic
-    Info (276029): Inferred altsyncram megafunction from the following design logic: "ram_rtl_0" 
-        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
-        Info (286033): Parameter WIDTH_A set to 1
-        Info (286033): Parameter WIDTHAD_A set to 17
-        Info (286033): Parameter NUMWORDS_A set to 131072
-        Info (286033): Parameter WIDTH_B set to 1
-        Info (286033): Parameter WIDTHAD_B set to 17
-        Info (286033): Parameter NUMWORDS_B set to 131072
-        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
-        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
-        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
-        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
-        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
-        Info (286033): Parameter INDATA_ACLR_A set to NONE
-        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
-Info (12130): Elaborated megafunction instantiation "altsyncram:ram_rtl_0"
-Info (12133): Instantiated megafunction "altsyncram:ram_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
-    Info (12134): Parameter "WIDTH_A" = "1"
-    Info (12134): Parameter "WIDTHAD_A" = "17"
-    Info (12134): Parameter "NUMWORDS_A" = "131072"
-    Info (12134): Parameter "WIDTH_B" = "1"
-    Info (12134): Parameter "WIDTHAD_B" = "17"
-    Info (12134): Parameter "NUMWORDS_B" = "131072"
-    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
-    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
-    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
-    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
-    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
-    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u8h1.tdf
-    Info (12023): Found entity 1: altsyncram_u8h1 File: E:/Diploma/-bachelor/db/altsyncram_u8h1.tdf Line: 32
-Info (12021): Found 1 design units, including 1 entities, in source file db/decode_bua.tdf
-    Info (12023): Found entity 1: decode_bua File: E:/Diploma/-bachelor/db/decode_bua.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_kob.tdf
-    Info (12023): Found entity 1: mux_kob File: E:/Diploma/-bachelor/db/mux_kob.tdf Line: 23
+    Info (12023): Found entity 1: mem_to_disp File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file string_ram.sv
+    Info (12023): Found entity 1: string_ram File: E:/Diploma/-bachelor/string_ram.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/tb9.sv
+    Info (12023): Found entity 1: tb9 File: E:/Diploma/-bachelor/output_files/tb9.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file command_worker.sv
+    Info (12023): Found entity 1: command_worker File: E:/Diploma/-bachelor/command_worker.sv Line: 3
+Info (12127): Elaborating entity "command_worker" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file E:/Diploma/-bachelor/output_files/Diploma.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 7 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "in[1]" File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 3
-    Warning (15610): No output dependent on input pin "in[2]" File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 3
-    Warning (15610): No output dependent on input pin "in[3]" File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 3
-    Warning (15610): No output dependent on input pin "in[4]" File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 3
-    Warning (15610): No output dependent on input pin "in[5]" File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 3
-    Warning (15610): No output dependent on input pin "in[6]" File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 3
-    Warning (15610): No output dependent on input pin "in[7]" File: E:/Diploma/-bachelor/mem_to_disp.sv Line: 3
-Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 43 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 32 logic cells
-    Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4781 megabytes
-    Info: Processing ended: Sun May 05 23:54:56 2024
-    Info: Elapsed time: 00:00:09
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 31 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4817 megabytes
+    Info: Processing ended: Tue May 07 23:59:59 2024
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:08
 
 

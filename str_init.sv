@@ -1,3 +1,4 @@
+// приглашение к вводу.
 module str_init(init, clk, ready, next_symb, next_line, out, no_com);
 
 input logic clk, init, no_com;

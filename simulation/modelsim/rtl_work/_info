@@ -9,55 +9,238 @@ z2
 !i10f 100
 cModel Technology
 Z0 dE:/Diploma/-bachelor/simulation/modelsim
-vram_use
+vaddr_sum
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1714262048
+Z2 !s110 1715113705
 !i10b 1
-!s100 QzN;QaAFLjB?@5@QK:Eb92
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I[1Paf2gnL3D[RK`0G:ioY2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 glG;?M86:XXF6O3VR4W?U2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Iz1cl_DJomk@BWRdZkj_X]2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1713564587
-8E:/Diploma/-bachelor/ram_use.sv
-FE:/Diploma/-bachelor/ram_use.sv
-!i122 0
-L0 1 35
-Z4 OV;L;2020.1;71
+w1713106687
+8E:/Diploma/-bachelor/addr_sum.sv
+FE:/Diploma/-bachelor/addr_sum.sv
+!i122 6
+L0 1 10
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1714262048.000000
-!s107 E:/Diploma/-bachelor/ram_use.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/ram_use.sv|
+Z6 !s108 1715113705.000000
+!s107 E:/Diploma/-bachelor/addr_sum.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/addr_sum.sv|
 !i113 1
-Z6 o-sv -work work
-!s92 -sv -work work +incdir+E:/Diploma/-bachelor
-Z7 tCvgOpt 0
-vtb8
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+E:/Diploma/-bachelor
+Z9 tCvgOpt 0
+vcommands
 R1
-!s110 1714262049
+Z10 !s110 1715113704
 !i10b 1
-!s100 Nb5jc1BMnU`URYUCL=lgb2
-R2
-Ic=G=7IIkOh8_>M>aWgKe83
+!s100 CG7_gLl><SZTfdXjUXeR12
 R3
+ITZ=llLH55IO?AToAi;QIY2
+R4
 S1
 R0
-w1713564493
-8E:/Diploma/-bachelor/output_files/tb8.sv
-FE:/Diploma/-bachelor/output_files/tb8.sv
+w1715113572
+8E:/Diploma/-bachelor/commands.sv
+FE:/Diploma/-bachelor/commands.sv
 !i122 1
-L0 3 29
-R4
+L0 1 57
+R5
 r1
 !s85 0
 31
-R5
-!s107 E:/Diploma/-bachelor/output_files/tb8.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor/output_files|E:/Diploma/-bachelor/output_files/tb8.sv|
+Z11 !s108 1715113704.000000
+!s107 E:/Diploma/-bachelor/commands.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/commands.sv|
 !i113 1
-R6
-!s92 -sv -work work +incdir+E:/Diploma/-bachelor/output_files
 R7
+R8
+R9
+vflag_del1
+R1
+R2
+!i10b 1
+!s100 >0^QTdfd;7i9>[feHE4Bc1
+R3
+I3[G7[l[c[fS;U<HTc3iRJ0
+R4
+S1
+R0
+w1713093738
+8E:/Diploma/-bachelor/flag_del1.sv
+FE:/Diploma/-bachelor/flag_del1.sv
+!i122 5
+L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Diploma/-bachelor/flag_del1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/flag_del1.sv|
+!i113 1
+R7
+R8
+R9
+vKeyboardController
+R1
+R10
+!i10b 1
+!s100 G93iP>d^XI[zQ0WIN7fn22
+R3
+I11J9E1[SR=AW1UHajSmka3
+R4
+S1
+R0
+w1713098328
+8E:/Diploma/-bachelor/KeyboardController.sv
+FE:/Diploma/-bachelor/KeyboardController.sv
+!i122 2
+L0 29 61
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/Diploma/-bachelor/KeyboardController.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/KeyboardController.sv|
+!i113 1
+R7
+R8
+R9
+n@keyboard@controller
+vschet_param
+R1
+R10
+!i10b 1
+!s100 LzDEE[Y5[R8[A8<lDHKm_1
+R3
+If]G?VPFO;8jYUmJK6_8Wh0
+R4
+S1
+R0
+w1713104389
+8E:/Diploma/-bachelor/schet_param.sv
+FE:/Diploma/-bachelor/schet_param.sv
+!i122 0
+L0 1 26
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/Diploma/-bachelor/schet_param.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/schet_param.sv|
+!i113 1
+R7
+R8
+R9
+vsimple_dual_port_ram_single_clock
+R1
+R10
+!i10b 1
+!s100 ?c7CfX2Ai5n4A3FZK3A;f3
+R3
+I@ae4m<6M0c`Z?9Sk=BEK;2
+R4
+S1
+R0
+w1714257919
+8E:/Diploma/-bachelor/simple_dual_port_ram_single_clock.sv
+FE:/Diploma/-bachelor/simple_dual_port_ram_single_clock.sv
+!i122 4
+L0 5 26
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/Diploma/-bachelor/simple_dual_port_ram_single_clock.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/simple_dual_port_ram_single_clock.sv|
+!i113 1
+R7
+R8
+R9
+vstring_ram
+R1
+R2
+!i10b 1
+!s100 `J_QJSkSV6KK`eAEg<YT]3
+R3
+IL^lAQNWzT>:<0mze8lO]j1
+R4
+S1
+R0
+w1715113605
+8E:/Diploma/-bachelor/string_ram.sv
+FE:/Diploma/-bachelor/string_ram.sv
+!i122 7
+L0 1 37
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Diploma/-bachelor/string_ram.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/string_ram.sv|
+!i113 1
+R7
+R8
+R9
+vtb3
+R1
+R2
+!i10b 1
+!s100 <z?=Dn^IRXV]@AEij8g=<3
+R3
+INkf7jIO^Xh<zF6Y5F6aA;2
+R4
+S1
+R0
+w1711990071
+8E:/Diploma/-bachelor/output_files/tb3.sv
+FE:/Diploma/-bachelor/output_files/tb3.sv
+!i122 8
+L0 3 92
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/Diploma/-bachelor/output_files/tb3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor/output_files|E:/Diploma/-bachelor/output_files/tb3.sv|
+!i113 1
+R7
+!s92 -sv -work work +incdir+E:/Diploma/-bachelor/output_files
+R9
+vtop
+R1
+R10
+!i10b 1
+!s100 g7@BW<9j8]=5jN4o_1Z5c2
+R3
+IIDVd8C13;UY3<RToM^^8F0
+R4
+S1
+R0
+w1715113649
+8E:/Diploma/-bachelor/top.sv
+FE:/Diploma/-bachelor/top.sv
+!i122 3
+L0 1 31
+R5
+r1
+!s85 0
+31
+R11
+!s107 E:/Diploma/-bachelor/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Diploma/-bachelor|E:/Diploma/-bachelor/top.sv|
+!i113 1
+R7
+R8
+R9

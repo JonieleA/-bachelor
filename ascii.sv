@@ -1,3 +1,5 @@
+// just for info
+
 module ascii ();
 
 enum logic [7:0]

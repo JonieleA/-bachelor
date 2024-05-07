@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sun May 05 23:54:56 2024
+Analysis & Synthesis Status : Successful - Tue May 07 23:59:59 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Diploma
-Top-level Entity Name : mem_to_disp
+Top-level Entity Name : command_worker
 Family : Cyclone IV E
-Total logic elements : 32
-    Total combinational functions : 28
-    Dedicated logic registers : 4
-Total registers : 4
-Total pins : 44
+Total logic elements : 26
+    Total combinational functions : 26
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 28
 Total virtual pins : 0
-Total memory bits : 131,072
+Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

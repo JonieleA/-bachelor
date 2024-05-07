@@ -1,8 +1,8 @@
-module commands(in, clk, str, Delete, CUF, CUB, CNL, CPL, CHA, CUP, ED, EL, SU, SD, HVP, SCP, RCP, Clear, Uname, _rst, state, nextstate);
+module commands(in, clk, str, Delete, CUF, CUB, CNL, CPL, CHA, CUP, ED, EL, SU, SD, HVP, SCP, RCP, Clear, Uname, rst, state, nextstate);
 
 input logic [7:0] in;
 input logic clk;
-output logic _rst=1;
+output logic rst=1;
 output logic Delete, CUF, CUB, CNL, CPL, CHA, CUP, ED, EL, SU, SD, HVP, SCP, RCP, Clear, Uname;
 output logic [6:0] str;
 output enum logic [4:0] {zero, csi1, csi2, delete1, delete2, cuf, cub, cnl, cpl, cha, cup, ed, el, su, sd, hvp, scp, rcp, uname1, uname2, uname3, uname4, uname5, uname6, uname7, uname8, clear1, clear2, clear3, clear4, clear5} state=zero, nextstate;
@@ -11,8 +11,8 @@ logic [4:0] gnd=0;
 
 schet_param #(.Schet(80)) schet (.clk(clk), .count(str), .plus_out(gnd[0]), .minus_out(gnd[1]), .plus(clk), .minus(gnd[2]));
 
-always_ff @(posedge clk, negedge _rst)
-	if (!_rst) state <= zero;
+always_ff @(posedge clk, posedge rst)
+	if (rst) state <= zero;
 	else state <= nextstate;
 
 always_comb begin
