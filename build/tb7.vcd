@@ -1,0 +1,33 @@
+$date
+	Sun May 19 16:14:30 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb7 $end
+$var wire 12 ! out [11:0] $end
+$var reg 7 " str [6:0] $end
+$var reg 6 # tab [5:0] $end
+$scope module addr_sum $end
+$var wire 7 $ str [6:0] $end
+$var wire 6 % tab [5:0] $end
+$var wire 12 & out [11:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b111011111111 &
+b101111 %
+b1001111 $
+b101111 #
+b1001111 "
+b111011111111 !
+$end
+#10

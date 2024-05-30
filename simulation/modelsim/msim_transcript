@@ -10,105 +10,45 @@
 # Copying D:/Programs/intelFPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/schet_param.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:24 on May 07,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/schet_param.sv 
-# -- Compiling module schet_param
-# 
-# Top level modules:
-# 	schet_param
-# End time: 23:28:24 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/commands.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:24 on May 07,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/commands.sv 
-# -- Compiling module commands
-# 
-# Top level modules:
-# 	commands
-# End time: 23:28:24 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/KeyboardController.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:24 on May 07,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/KeyboardController.sv 
-# -- Compiling module KeyboardController
-# 
-# Top level modules:
-# 	KeyboardController
-# End time: 23:28:24 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/top.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:24 on May 07,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/top.sv 
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 23:28:24 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/simple_dual_port_ram_single_clock.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:24 on May 07,2024
+# Start time: 03:38:25 on May 28,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/simple_dual_port_ram_single_clock.sv 
 # -- Compiling module simple_dual_port_ram_single_clock
 # 
 # Top level modules:
 # 	simple_dual_port_ram_single_clock
-# End time: 23:28:24 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/flag_del1.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:25 on May 07,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/flag_del1.sv 
-# -- Compiling module flag_del1
-# 
-# Top level modules:
-# 	flag_del1
-# End time: 23:28:25 on May 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/addr_sum.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:25 on May 07,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/addr_sum.sv 
-# -- Compiling module addr_sum
-# 
-# Top level modules:
-# 	addr_sum
-# End time: 23:28:25 on May 07,2024, Elapsed time: 0:00:00
+# End time: 03:38:25 on May 28,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+E:/Diploma/-bachelor {E:/Diploma/-bachelor/string_ram.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:25 on May 07,2024
+# Start time: 03:38:25 on May 28,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor" E:/Diploma/-bachelor/string_ram.sv 
 # -- Compiling module string_ram
 # 
 # Top level modules:
 # 	string_ram
-# End time: 23:28:25 on May 07,2024, Elapsed time: 0:00:00
+# End time: 03:38:25 on May 28,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+E:/Diploma/-bachelor/output_files {E:/Diploma/-bachelor/output_files/tb3.sv}
+# vlog -sv -work work +incdir+E:/Diploma/-bachelor/output_files {E:/Diploma/-bachelor/output_files/tb9.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:28:25 on May 07,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor/output_files" E:/Diploma/-bachelor/output_files/tb3.sv 
-# -- Compiling module tb3
+# Start time: 03:38:25 on May 28,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/Diploma/-bachelor/output_files" E:/Diploma/-bachelor/output_files/tb9.sv 
+# -- Compiling module tb9
 # 
 # Top level modules:
-# 	tb3
-# End time: 23:28:25 on May 07,2024, Elapsed time: 0:00:00
+# 	tb9
+# End time: 03:38:25 on May 28,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb3
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb3 
-# Start time: 23:28:25 on May 07,2024
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb9
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb9 
+# Start time: 03:38:26 on May 28,2024
 # Loading sv_std.std
-# Loading work.tb3
-# Loading work.commands
-# Loading work.schet_param
+# Loading work.tb9
+# Loading work.string_ram
+# Loading work.simple_dual_port_ram_single_clock
 # 
 # add wave *
 # view structure
@@ -116,8 +56,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : E:/Diploma/-bachelor/output_files/tb3.sv(92)
-#    Time: 500 ns  Iteration: 0  Instance: /tb3
-# Break in Module tb3 at E:/Diploma/-bachelor/output_files/tb3.sv line 92
-# End time: 23:28:38 on May 07,2024, Elapsed time: 0:00:13
+# ** Note: $stop    : E:/Diploma/-bachelor/output_files/tb9.sv(24)
+#    Time: 1 us  Iteration: 0  Instance: /tb9
+# Break in Module tb9 at E:/Diploma/-bachelor/output_files/tb9.sv line 24
+# End time: 03:44:40 on May 28,2024, Elapsed time: 0:06:14
 # Errors: 0, Warnings: 0

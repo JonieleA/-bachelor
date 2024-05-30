@@ -4,107 +4,87 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "state[0]",
+					"name" : "out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "state[1]",
+					"name" : "out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "state[2]",
+					"name" : "out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "state[3]",
+					"name" : "out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "state[4]",
+					"name" : "out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "nextstate[0]",
+					"name" : "out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "nextstate[1]",
+					"name" : "out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "nextstate[2]",
+					"name" : "out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "nextstate[3]",
+					"name" : "overload",
 					"strict" : false
 				},
 				{
-					"name" : "nextstate[4]",
+					"name" : "state",
 					"strict" : false
 				},
 				{
-					"name" : "ED",
+					"name" : "nextstate",
 					"strict" : false
 				},
 				{
-					"name" : "CHA",
+					"name" : "str_clear_flag",
 					"strict" : false
 				},
 				{
-					"name" : "CUF",
+					"name" : "clear_count[0]",
 					"strict" : false
 				},
 				{
-					"name" : "CNL",
+					"name" : "clear_count[1]",
 					"strict" : false
 				},
 				{
-					"name" : "EL",
+					"name" : "clear_count[2]",
 					"strict" : false
 				},
 				{
-					"name" : "SD",
+					"name" : "clear_count[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SU",
+					"name" : "clear_count[4]",
 					"strict" : false
 				},
 				{
-					"name" : "SCP",
+					"name" : "clear_count[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Clear",
+					"name" : "clear_count[6]",
 					"strict" : false
 				},
 				{
-					"name" : "RCP",
+					"name" : "clear_flag",
 					"strict" : false
 				},
 				{
-					"name" : "HVP",
-					"strict" : false
-				},
-				{
-					"name" : "Delete",
-					"strict" : false
-				},
-				{
-					"name" : "CUB",
-					"strict" : false
-				},
-				{
-					"name" : "CPL",
-					"strict" : false
-				},
-				{
-					"name" : "CUP",
-					"strict" : false
-				},
-				{
-					"name" : "Uname",
+					"name" : "we",
 					"strict" : false
 				},
 				{
@@ -112,7 +92,71 @@
 					"strict" : false
 				},
 				{
+					"name" : "in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "str_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "str_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "str_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "str_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "str_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "str_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "str_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in[7]",
+					"strict" : false
+				},
+				{
 					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "back",
 					"strict" : false
 				}
 			]

@@ -1,6 +1,5 @@
 `timescale 1ns/1ns
-
-module tb3;
+module tb3();
 
 logic clk, Delete, CUF, CUB, CNL, CPL, CHA, CUP, ED, EL, SU, SD, HVP, SCP, RCP, Clear, Uname, _rst;
 logic [6:0] str;
@@ -90,5 +89,6 @@ in = 8'd27;
 end
 
 initial #500 $stop;
+
 
 endmodule

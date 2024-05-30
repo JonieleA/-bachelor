@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module tb7;
+module tb7();
 
 logic [$clog2(80)-1:0] str;
 logic [$clog2(48)-1:0] tab;
@@ -14,5 +14,6 @@ tab = 47;
 end
 
 initial #10 $stop;
+
 
 endmodule
